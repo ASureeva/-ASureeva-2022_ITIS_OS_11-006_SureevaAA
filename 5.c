@@ -122,7 +122,7 @@ int main(int argc, char *argv[]) {
 
         if ((sort_int != 1) && (sort_int != 2)) {
                 printf("Error:SortTypeError.\n");
-                return 1;
+                return -1;
         }
         result = read_directory(files, from_dir);
         if(result != 0) {
